@@ -45,7 +45,7 @@ class MemoryTile:
         self.score_label.grid(row=0, column=4)
         self.start_button.grid(row=9, column=2)
         self.close_button.grid(row=9, column=4)
-        self.start_button.configure(state=tk.NORMAL)
+        self.start_button.configure(state=tk.NORMAL, text='Start', command=self.start_game)
         for row in self.buttons:
             for button in row:
                 button.config(text='', state=tk.DISABLED)
